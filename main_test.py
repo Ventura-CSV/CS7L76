@@ -18,10 +18,10 @@ def test_main_1():
     print(lines)
 
     regex_string = r'[\w,\W]*5'
-    regex_string = r'[\w,\W]*4'
-    regex_string = r'[\w,\W]*3'
-    regex_string = r'[\w,\W]*2'
-    regex_string = r'[\w,\W]*1'
+    regex_string += r'[\w,\W]*4'
+    regex_string += r'[\w,\W]*3'
+    regex_string += r'[\w,\W]*2'
+    regex_string += r'[\w,\W]*1'
     regex_string += r'[\w,\W]*'
     print(regex_string)
     res = re.search(regex_string, lines[0])
@@ -43,10 +43,10 @@ def test_main_2():
     print(lines)
 
     regex_string = r'[\w,\W]*2'
-    regex_string = r'[\w,\W]*8'
-    regex_string = r'[\w,\W]*2'
-    regex_string = r'[\w,\W]*5'
-    regex_string = r'[\w,\W]*1'
+    regex_string += r'[\w,\W]*8'
+    regex_string += r'[\w,\W]*2'
+    regex_string += r'[\w,\W]*5'
+    regex_string += r'[\w,\W]*1'
     regex_string += r'[\w,\W]*'
     print(regex_string)
     res = re.search(regex_string, lines[0])
