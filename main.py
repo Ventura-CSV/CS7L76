@@ -1,8 +1,24 @@
+
+def getInput():
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
+
+
+def makeReverse(numbers):
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
+
+
 def main():
-    ##################################################
-    # Comlete your code here
-    ##################################################
-    pass
+    numbers = getInput()
+    ret = makeReverse(numbers)
+    print(f'The result values are: {ret}')
 
 
 if __name__ == '__main__':
