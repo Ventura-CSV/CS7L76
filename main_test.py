@@ -52,3 +52,13 @@ def test_main_2():
 
     print(f'Your return value is {ret}')
     assert ret == target
+
+
+def test_main_3():
+    detect = 0
+    with open('main.py') as f:
+        for line in f:
+            if line.find('reverse(') != -1:
+                detect = 1
+
+    assert detect == 0, 'Do not use reverse() function'
